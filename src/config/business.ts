@@ -23,7 +23,7 @@ export const business = {
     phoneDisplay: "06 58 39 30 49",
     whatsapp: "+212658393049",
     email: "PLACEHOLDER_EMAIL",
-    address: "PLACEHOLDER_FULL_ADDRESS",
+    address: "N°02 Avenue Med V, Hay Nahda, Sect. 05, Karia – Salé",
   },
   social: {
     instagram: "",

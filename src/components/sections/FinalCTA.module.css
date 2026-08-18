@@ -23,6 +23,27 @@
   display: flex;
   gap: var(--space-4);
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-top: var(--space-4);
+  width: 100%;
+}
+
+.ctas > a {
+  min-width: 190px;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .ctas {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .ctas > a {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
 }

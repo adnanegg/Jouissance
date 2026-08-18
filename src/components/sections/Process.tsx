@@ -9,7 +9,7 @@ type Props = {
 
 export default function Process({ content }: Props) {
   return (
-    <section className="section section--surface">
+    <section className="section section--surface" id="approche">
       <div className="container">
         <div className={styles.header}>
           <h2 className={styles.title}>{content.process.sectionTitle}</h2>

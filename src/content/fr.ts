@@ -30,9 +30,9 @@ export const contentFr: SiteContent = {
     headline: "Tous vos travaux.\nUn seul interlocuteur.",
     subheadline:
       "Construction, rénovation, peinture, plâtre, aluminium, électricité, plomberie et finition — Jouissance coordonne l'ensemble de vos travaux pour que vous n'ayez qu'un seul contact.",
-    ctaPrimary: "Parler sur WhatsApp",
-    ctaSecondary: "Demander un devis",
-    ctaCall: "Appeler directement",
+    ctaPrimary: "Demander un devis",
+    ctaSecondary: "Appelez-nous",
+    ctaCall: "Appelez-nous",
     trustLine:
       "15+ ans d'expérience · Réponse rapide · Travail garanti · Partout au Maroc",
     carouselLabel: "Galerie de projets réalisés",
@@ -51,13 +51,6 @@ export const contentFr: SiteContent = {
     ],
   },
 
-  problem: {
-    headline: "Pourquoi jongler entre plusieurs artisans\u00a0?",
-    body: "Coordonner maçons, peintres, plombiers, électriciens et menuisiers pour un même projet, c'est du temps perdu, des retards et des résultats incohérents. Chaque artisan a ses délais, ses habitudes et sa propre façon de travailler.",
-    solution:
-      "Avec Jouissance, vous avez un seul interlocuteur qui coordonne l'ensemble des travaux. Moins de stress, plus de cohérence et un résultat à la hauteur de vos attentes.",
-    cta: "Découvrir nos services",
-  },
 
   services: {
     sectionTitle: "Nos services",
@@ -231,8 +224,8 @@ export const contentFr: SiteContent = {
 
   nationwide: {
     headline: "Nous intervenons partout au Maroc",
-    body: "Basés à Salé, nous nous déplaçons sur l'ensemble du territoire marocain selon les besoins de votre projet. Que ce soit pour une rénovation, une construction ou des travaux de finition, nous sommes là.",
-    cta: "Parlez-nous de votre projet",
+    body: "Basés à Salé, nous intervenons sur l'ensemble du territoire marocain pour tous vos travaux de construction, rénovation et finition.",
+    cta: "Discuter de mon projet",
   },
 
   faq: {
@@ -320,8 +313,8 @@ export const contentFr: SiteContent = {
   finalCta: {
     headline: "Votre projet, notre savoir-faire.",
     body: "Parlez-nous de ce que vous souhaitez construire, rénover, réparer ou améliorer. Nous simplifions le reste.",
-    ctaWhatsapp: "Parler sur WhatsApp",
-    ctaCall: "Appeler",
+    ctaWhatsapp: "Demander un devis",
+    ctaCall: "Appelez-nous",
     ctaDevis: "Demander un devis",
   },
 

@@ -55,6 +55,7 @@
 }
 
 .counter {
+  direction: ltr;
   font-size: var(--text-sm);
   color: hsla(0, 0%, 100%, 0.7);
   font-variant-numeric: tabular-nums;

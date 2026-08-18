@@ -26,12 +26,30 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
   flex-shrink: 0;
 }
 
-.logo img {
-  height: 36px;
-  width: auto;
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logoName {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 0.04em;
+}
+
+.logoDesc {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.12em;
+  margin-top: 2px;
 }
 
 /* Desktop Nav */

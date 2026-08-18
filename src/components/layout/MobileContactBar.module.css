@@ -1,53 +1,52 @@
-.bar {
+.floatingBtn {
   display: none;
   position: fixed;
-  bottom: 0;
-  inset-inline: 0;
+  bottom: 1.25rem;
+  inset-inline-end: 1.25rem;
   z-index: var(--z-mobile-bar);
-  background-color: var(--white);
-  border-top: 1px solid var(--border-light);
-  box-shadow: 0 -2px 12px hsla(220, 20%, 10%, 0.08);
-  padding: var(--space-2) var(--space-3);
-  gap: var(--space-2);
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--whatsapp);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 16px hsla(142, 70%, 30%, 0.45);
+  text-decoration: none;
+  transition: transform var(--duration-fast), background-color var(--duration-fast), box-shadow var(--duration-fast);
+  animation: pulseGlow 3s infinite;
 }
 
 @media (max-width: 768px) {
-  .bar {
+  .floatingBtn {
     display: flex;
   }
 }
 
-.whatsapp,
-.call {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-lg);
-  font-size: var(--text-base);
-  font-weight: 600;
-  text-decoration: none;
-  transition: all var(--duration-fast);
-}
-
-.whatsapp {
-  background-color: var(--whatsapp);
-  color: var(--white);
-  flex: 1.3;
-}
-
-.whatsapp:hover {
+.floatingBtn:hover {
   background-color: var(--whatsapp-hover);
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px hsla(142, 70%, 30%, 0.55);
 }
 
-.call {
-  background-color: var(--neutral-50);
-  color: var(--text-primary);
-  border: 1px solid var(--border);
+.floatingBtn:active {
+  transform: scale(0.94);
 }
 
-.call:hover {
-  background-color: var(--neutral-100);
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 4px 16px hsla(142, 70%, 30%, 0.45);
+  }
+  50% {
+    box-shadow: 0 4px 24px hsla(142, 70%, 40%, 0.75);
+  }
+  100% {
+    box-shadow: 0 4px 16px hsla(142, 70%, 30%, 0.45);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floatingBtn {
+    animation: none;
+  }
 }

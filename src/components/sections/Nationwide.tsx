@@ -18,7 +18,7 @@ export default function Nationwide({ locale, content }: Props) {
     <section className="section section--navy">
       <div className={`container ${styles.inner}`}>
         <div className={styles.mapGraphic} aria-hidden="true">
-          <svg width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={styles.globeIcon}>
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={styles.globeIcon}>
             <circle cx="12" cy="12" r="10" />
             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
             <path d="M2 12h20" />

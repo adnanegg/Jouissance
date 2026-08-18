@@ -79,13 +79,6 @@ export interface SiteContent {
     items: string[];
   };
 
-  /* Problem / Positioning */
-  problem: {
-    headline: string;
-    body: string;
-    solution: string;
-    cta: string;
-  };
 
   /* Services */
   services: {

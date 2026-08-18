@@ -2,13 +2,14 @@
   display: flex;
   align-items: center;
   gap: var(--space-12);
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
   .inner {
     flex-direction: column;
     text-align: center;
-    gap: var(--space-6);
+    gap: var(--space-4);
   }
 }
 
@@ -18,13 +19,25 @@
   align-items: center;
   justify-content: center;
   color: var(--cyan-light);
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.globeIcon {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .globeIcon {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-4);
   max-width: 600px;
 }
 
@@ -34,9 +47,9 @@
 }
 
 .body {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   color: var(--neutral-300);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .action {

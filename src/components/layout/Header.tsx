@@ -56,15 +56,19 @@ export default function Header({ locale, content }: HeaderProps) {
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
         <div className={`container ${styles.inner}`}>
-          {/* Logo */}
           <Link href={`/${locale}`} className={styles.logo} aria-label={content.nav.home}>
             <Image
-              src="/brand/logo.svg"
-              alt={`${content.nav.home} — Jouissance Travaux Divers`}
-              width={180}
-              height={40}
+              src="/logo.png"
+              alt="Jouissance Travaux Divers"
+              width={48}
+              height={48}
+              style={{ height: "42px", width: "auto", objectFit: "contain" }}
               priority
             />
+            <div className={styles.logoText}>
+              <span className={styles.logoName}>JOUISSANCE</span>
+              <span className={styles.logoDesc}>TRAVAUX DIVERS</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

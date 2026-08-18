@@ -4,7 +4,6 @@ import type { Locale } from "@/config/site";
 import { getContent } from "@/lib/i18n";
 
 import Hero from "@/components/sections/Hero";
-import Problem from "@/components/sections/Problem";
 import Services from "@/components/sections/Services";
 import WhyJouissance from "@/components/sections/WhyJouissance";
 import Realizations from "@/components/sections/Realizations";
@@ -31,10 +30,9 @@ export default async function LandingPage({ params }: Props) {
   return (
     <>
       <Hero locale={typedLocale} content={content} />
-      <Problem content={content} />
       <Services content={content} />
-      <WhyJouissance content={content} />
       <Realizations content={content} />
+      <WhyJouissance content={content} />
       <Process content={content} />
       <Nationwide locale={typedLocale} content={content} />
       <FAQ content={content} />
