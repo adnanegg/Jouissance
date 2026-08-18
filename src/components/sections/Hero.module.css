@@ -50,30 +50,10 @@
 
 .ctas {
   display: flex;
+  align-items: stretch;
   gap: var(--space-4);
   flex-wrap: wrap;
   padding-top: var(--space-2);
-}
-
-.callLink {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  color: var(--text-secondary);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  transition: color var(--duration-fast);
-}
-
-.callLink:hover {
-  color: var(--text-primary);
-}
-
-.trustLine {
-  font-size: var(--text-sm);
-  color: var(--text-muted);
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--border-light);
 }
 
 /* Carousel */
@@ -99,14 +79,6 @@
 
   .ctas {
     justify-content: center;
-  }
-
-  .callLink {
-    justify-content: center;
-  }
-
-  .trustLine {
-    text-align: center;
   }
 }
 
