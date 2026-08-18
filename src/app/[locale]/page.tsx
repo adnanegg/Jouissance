@@ -4,7 +4,6 @@ import type { Locale } from "@/config/site";
 import { getContent } from "@/lib/i18n";
 
 import Hero from "@/components/sections/Hero";
-import TrustStrip from "@/components/sections/TrustStrip";
 import Problem from "@/components/sections/Problem";
 import Services from "@/components/sections/Services";
 import WhyJouissance from "@/components/sections/WhyJouissance";
@@ -32,7 +31,6 @@ export default async function LandingPage({ params }: Props) {
   return (
     <>
       <Hero locale={typedLocale} content={content} />
-      <TrustStrip content={content} />
       <Problem content={content} />
       <Services content={content} />
       <WhyJouissance content={content} />
