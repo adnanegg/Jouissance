@@ -1,0 +1,78 @@
+.carousel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  height: 100%;
+  transition: transform 600ms var(--ease-in-out);
+}
+
+[dir="rtl"] .track {
+  flex-direction: row-reverse;
+}
+
+.slide {
+  flex: 0 0 100%;
+  position: relative;
+  height: 100%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  bottom: var(--space-4);
+  inset-inline-end: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background-color: hsla(220, 20%, 10%, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-2);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  color: var(--white);
+  transition: background-color var(--duration-fast);
+}
+
+.arrow:hover {
+  background-color: hsla(0, 0%, 100%, 0.15);
+}
+
+.counter {
+  font-size: var(--text-sm);
+  color: hsla(0, 0%, 100%, 0.7);
+  font-variant-numeric: tabular-nums;
+  min-width: 4.5ch;
+  text-align: center;
+}
+
+.counterCurrent {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.counterTotal {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    transition: none;
+  }
+}

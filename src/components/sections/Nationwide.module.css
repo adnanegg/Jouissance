@@ -1,0 +1,44 @@
+.inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-6);
+  }
+}
+
+.mapGraphic {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan-light);
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 600px;
+}
+
+.headline {
+  font-size: var(--text-4xl);
+  color: var(--white);
+}
+
+.body {
+  font-size: var(--text-lg);
+  color: var(--neutral-300);
+  line-height: 1.7;
+}
+
+.action {
+  padding-top: var(--space-2);
+}
