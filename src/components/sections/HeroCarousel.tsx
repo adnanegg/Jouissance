@@ -100,9 +100,7 @@ export default function HeroCarousel({ locale, content }: Props) {
       <div
         className={styles.track}
         style={{
-          transform: isRtl
-            ? `translateX(${current * 100}%)`
-            : `translateX(-${current * 100}%)`,
+          transform: `translateX(-${current * 100}%)`,
         }}
       >
         {heroImages.map((img, i) => (
@@ -120,7 +118,7 @@ export default function HeroCarousel({ locale, content }: Props) {
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className={styles.image}
-              priority={i === 0}
+              priority
               quality={85}
             />
           </div>
