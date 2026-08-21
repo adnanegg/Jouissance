@@ -77,9 +77,9 @@ export default function Footer({ locale, content }: Props) {
             <Image
               src="/logo.png"
               alt="Jouissance Travaux Divers"
-              width={48}
-              height={48}
-              style={{ height: "42px", width: "auto", objectFit: "contain" }}
+              width={64}
+              height={64}
+              style={{ height: "58px", width: "auto", objectFit: "contain" }}
             />
             <div className={styles.logoText}>
               <span className={styles.logoName}>JOUISSANCE</span>
