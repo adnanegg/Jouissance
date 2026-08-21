@@ -205,10 +205,40 @@
   animation-name: slideInRtl;
 }
 
+.mobileMenuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--space-4) var(--space-4) 0;
+}
+
+:global([dir="rtl"]) .mobileMenuHeader {
+  justify-content: flex-start;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background-color: var(--neutral-100);
+  color: var(--navy);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--duration-fast), transform var(--duration-fast);
+}
+
+.closeButton:hover {
+  background-color: var(--neutral-200);
+  transform: scale(1.05);
+}
+
 .mobileMenuInner {
   display: flex;
   flex-direction: column;
-  padding: calc(var(--header-height) + var(--space-6)) var(--space-6) var(--space-8);
+  padding: var(--space-3) var(--space-6) var(--space-8);
   gap: var(--space-2);
 }
 
