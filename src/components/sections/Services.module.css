@@ -43,49 +43,70 @@
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  padding: var(--space-8);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
   transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out), border-color var(--duration-base);
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-xl);
   border-color: hsla(195, 72%, 42%, 0.4);
   background-color: var(--white);
 }
 
-.cardTop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--neutral-200);
 }
 
-.number {
-  font-size: var(--text-xl);
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.06);
+}
+
+.numberBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: var(--text-sm);
   font-weight: 700;
-  color: var(--neutral-400);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.05em;
 }
 
-.iconBox {
+:global([dir="rtl"]) .numberBadge {
+  left: auto;
+  right: 14px;
+}
+
+.cardContent {
+  padding: var(--space-6);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: var(--radius-lg);
-  background-color: var(--white);
-  color: var(--cyan);
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-sm);
+  flex-direction: column;
+  gap: var(--space-3);
+  flex-grow: 1;
 }
 
 .cardTitle {
   font-size: var(--text-xl);
   color: var(--navy);
   line-height: 1.3;
+  font-weight: 700;
 }
 
 .cardDesc {

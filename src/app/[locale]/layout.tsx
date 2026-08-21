@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales, getDirection } from "@/config/site";
 import type { Locale } from "@/config/site";
-import { inter, notoSansArabic } from "@/lib/fonts";
+import { inter, cairo } from "@/lib/fonts";
 import { generateLocaleMetadata, generateStructuredData } from "@/lib/seo";
 import { analyticsConfig } from "@/config/analytics";
 import { getContent } from "@/lib/i18n";
@@ -39,7 +39,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   const typedLocale = locale as Locale;
   const dir = getDirection(typedLocale);
-  const font = typedLocale === "ar" ? notoSansArabic : inter;
+  const font = typedLocale === "ar" ? cairo : inter;
   const content = getContent(typedLocale);
   const structuredData = generateStructuredData(typedLocale);
 

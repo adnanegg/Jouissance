@@ -60,9 +60,9 @@ export default function Header({ locale, content }: HeaderProps) {
             <Image
               src="/logo.png"
               alt="Jouissance Travaux Divers"
-              width={48}
-              height={48}
-              style={{ height: "42px", width: "auto", objectFit: "contain" }}
+              width={64}
+              height={64}
+              style={{ height: "56px", width: "auto", objectFit: "contain" }}
               priority
             />
             <div className={styles.logoText}>

@@ -11,7 +11,6 @@ import Process from "@/components/sections/Process";
 import Nationwide from "@/components/sections/Nationwide";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
-import FinalCTA from "@/components/sections/FinalCTA";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -37,7 +36,7 @@ export default async function LandingPage({ params }: Props) {
       <Nationwide locale={typedLocale} content={content} />
       <FAQ content={content} />
       <Contact locale={typedLocale} content={content} />
-      <FinalCTA locale={typedLocale} content={content} />
     </>
   );
 }
+

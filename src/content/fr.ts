@@ -111,16 +111,6 @@ export const contentFr: SiteContent = {
           "Chaque intervention est évaluée en fonction de vos besoins réels. Pas de formule rigide.",
       },
       {
-        title: "Réponse rapide",
-        description:
-          "Contactez-nous directement sur WhatsApp ou par téléphone. Nous répondons rapidement.",
-      },
-      {
-        title: "Travail garanti",
-        description:
-          "Nous nous engageons sur la qualité de nos interventions. Un travail soigné, du début à la fin.",
-      },
-      {
         title: "Intervention partout au Maroc",
         description:
           "Nous nous déplaçons sur l'ensemble du territoire marocain selon les besoins de votre projet.",

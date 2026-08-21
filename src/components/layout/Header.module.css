@@ -38,18 +38,18 @@
 }
 
 .logoName {
-  font-size: var(--text-lg);
+  font-size: clamp(1.2rem, 1.1rem + 0.4vw, 1.4rem);
   font-weight: 800;
   color: var(--navy);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
 .logoDesc {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-secondary);
-  letter-spacing: 0.12em;
-  margin-top: 2px;
+  letter-spacing: 0.14em;
+  margin-top: 3px;
 }
 
 /* Desktop Nav */
