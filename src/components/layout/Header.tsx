@@ -46,7 +46,18 @@ export default function Header({ locale, content }: HeaderProps) {
     };
   }, [menuOpen]);
 
-  const handleNavClick = () => setMenuOpen(false);
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    const id = href.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const handleLangSwitch = () => {
     trackLanguageSwitch(locale, altLocale);
@@ -78,6 +89,7 @@ export default function Header({ locale, content }: HeaderProps) {
                 key={section.key}
                 href={section.href}
                 className={styles.navLink}
+                onClick={(e) => handleNavClick(e, section.href)}
               >
                 {content.nav[section.key]}
               </a>
@@ -157,7 +169,7 @@ export default function Header({ locale, content }: HeaderProps) {
                   key={section.key}
                   href={section.href}
                   className={styles.mobileNavLink}
-                  onClick={handleNavClick}
+                  onClick={(e) => handleNavClick(e, section.href)}
                 >
                   {content.nav[section.key]}
                 </a>
@@ -170,7 +182,7 @@ export default function Header({ locale, content }: HeaderProps) {
                   className="btn btn--whatsapp btn--lg"
                   onClick={() => {
                     trackWhatsAppClick("mobile_menu");
-                    handleNavClick();
+                    setMenuOpen(false);
                   }}
                   style={{ width: "100%" }}
                 >
