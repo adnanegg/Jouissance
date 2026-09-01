@@ -11,7 +11,7 @@ export const siteConfig = {
   locales,
   defaultLocale,
   verification: {
-    google: "PLACEHOLDER_GOOGLE_SITE_VERIFICATION",
+    google: "rxn4-vvJSXniNDDI6Z4XB3eTMg6oAVNsXyo41XJ7UPY",
   },
 } as const;
 
