@@ -4,7 +4,7 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "fr";
 
 export const siteConfig = {
-  domain: "PLACEHOLDER_DOMAIN",
+  domain: "www.jouissance.ma",
   get baseUrl() {
     return `https://${this.domain}`;
   },
