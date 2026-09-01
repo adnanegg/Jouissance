@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
+import { sendLeadNotification } from "@/lib/email";
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, phone, city, category, description, hp } = body;
+    const { name, phone, email, city, category, description, locale, hp } = body;
 
     // Honeypot check: if honeypot field is filled, pretend success without doing anything
     if (hp) {
@@ -29,17 +30,16 @@ export async function POST(request: Request) {
     const sanitizedData = {
       name: name.trim().slice(0, 100),
       phone: phone.trim().slice(0, 30),
+      email: email ? String(email).trim().slice(0, 100) : "",
       city: city ? String(city).trim().slice(0, 50) : "",
       category: category ? String(category).trim().slice(0, 50) : "",
       description: description ? String(description).trim().slice(0, 1000) : "",
+      locale: locale || "fr",
       timestamp: new Date().toISOString(),
     };
 
-    // Log the request to server console (placeholder until email service like Resend/SendGrid is attached)
-    console.log("----------------------------------------");
-    console.log("NEW QUOTE REQUEST RECEIVED:");
-    console.log(JSON.stringify(sanitizedData, null, 2));
-    console.log("----------------------------------------");
+    // Send notification email
+    await sendLeadNotification(sanitizedData);
 
     return NextResponse.json({
       success: true,

@@ -135,6 +135,7 @@ export interface SiteContent {
     formTitle: string;
     fieldName: string;
     fieldPhone: string;
+    fieldEmail: string;
     fieldCity: string;
     fieldCategory: string;
     fieldCategoryPlaceholder: string;

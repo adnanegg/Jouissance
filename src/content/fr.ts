@@ -275,6 +275,7 @@ export const contentFr: SiteContent = {
     formTitle: "Demander un devis",
     fieldName: "Nom",
     fieldPhone: "Téléphone / WhatsApp",
+    fieldEmail: "Email",
     fieldCity: "Ville",
     fieldCategory: "Type de travaux",
     fieldCategoryPlaceholder: "Sélectionnez une catégorie",

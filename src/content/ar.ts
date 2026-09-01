@@ -275,6 +275,7 @@ export const contentAr: SiteContent = {
     formTitle: "اطلب عرض سعر",
     fieldName: "الاسم",
     fieldPhone: "الهاتف / واتساب",
+    fieldEmail: "البريد الإلكتروني",
     fieldCity: "المدينة",
     fieldCategory: "نوع الأشغال",
     fieldCategoryPlaceholder: "اختار فئة",

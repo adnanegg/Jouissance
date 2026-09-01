@@ -19,6 +19,7 @@ export default function Contact({ locale, content }: Props) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    email: "",
     city: "",
     category: "",
     description: "",
@@ -56,7 +57,7 @@ export default function Contact({ locale, content }: Props) {
       if (res.ok && data.success) {
         setStatus("success");
         trackFormSubmit();
-        setFormData({ name: "", phone: "", city: "", category: "", description: "", hp: "" });
+        setFormData({ name: "", phone: "", email: "", city: "", category: "", description: "", hp: "" });
       } else {
         setStatus("error");
         setErrorMessage(data.error || content.contact.errorMessage);
@@ -182,6 +183,21 @@ export default function Contact({ locale, content }: Props) {
                       className={styles.input}
                     />
                   </div>
+                </div>
+
+                <div className={styles.fieldGroup}>
+                  <label htmlFor="email" className={styles.label}>
+                    {content.contact.fieldEmail}
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="exemple@email.com"
+                    className={styles.input}
+                  />
                 </div>
 
                 <div className={styles.formRow}>
