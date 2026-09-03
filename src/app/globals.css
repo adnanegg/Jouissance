@@ -4,32 +4,38 @@
 
 /* ---------- CSS Custom Properties (Design Tokens) ---------- */
 :root {
-  /* Brand Colors */
-  --navy: hsl(222, 60%, 10%);
-  --navy-light: hsl(220, 55%, 16%);
+  /* Brand Colors — matched to logo */
+  --navy: hsl(218, 58%, 16%);
+  --navy-light: hsl(218, 50%, 22%);
   --blue: hsl(217, 85%, 45%);
   --blue-light: hsl(215, 90%, 58%);
-  --cyan: hsl(198, 95%, 48%);
-  --cyan-light: hsl(196, 92%, 65%);
+  --cyan: hsl(205, 75%, 55%);
+  --cyan-light: hsl(205, 72%, 75%);
   --orange: hsl(24, 95%, 53%);
   --orange-light: hsl(24, 95%, 62%);
   --orange-dark: hsl(24, 90%, 46%);
 
-  /* Neutrals */
-  --white: hsl(0, 0%, 100%);
-  --neutral-50: hsl(220, 20%, 97%);
-  --neutral-100: hsl(220, 18%, 94%);
-  --neutral-200: hsl(220, 15%, 88%);
-  --neutral-300: hsl(220, 12%, 78%);
-  --neutral-400: hsl(220, 10%, 62%);
-  --neutral-500: hsl(220, 10%, 48%);
-  --neutral-600: hsl(220, 12%, 38%);
-  --neutral-700: hsl(220, 15%, 28%);
-  --neutral-800: hsl(220, 18%, 18%);
-  --neutral-900: hsl(220, 22%, 10%);
+  /* Peach — from logo building silhouettes */
+  --peach: hsl(22, 80%, 85%);
+  --peach-light: hsl(24, 70%, 94%);
+  --peach-dark: hsl(22, 65%, 75%);
+
+  /* Neutrals — warm-shifted to harmonize with peach */
+  --white: hsl(30, 30%, 99%);
+  --neutral-50: hsl(28, 20%, 96%);
+  --neutral-100: hsl(26, 16%, 93%);
+  --neutral-200: hsl(25, 12%, 87%);
+  --neutral-300: hsl(24, 10%, 78%);
+  --neutral-400: hsl(22, 8%, 62%);
+  --neutral-500: hsl(22, 8%, 48%);
+  --neutral-600: hsl(22, 10%, 38%);
+  --neutral-700: hsl(22, 12%, 28%);
+  --neutral-800: hsl(22, 15%, 18%);
+  --neutral-900: hsl(22, 18%, 10%);
 
   /* Semantic */
-  --surface: var(--neutral-50);
+  --surface: var(--peach-light);
+  --surface-warm: var(--peach-light);
   --surface-alt: var(--white);
   --text-primary: var(--navy);
   --text-secondary: var(--neutral-600);
@@ -87,11 +93,11 @@
   --radius-2xl: 1.25rem;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px hsla(220, 20%, 10%, 0.06);
-  --shadow-md: 0 4px 12px hsla(220, 20%, 10%, 0.08);
-  --shadow-lg: 0 8px 24px hsla(220, 20%, 10%, 0.1);
-  --shadow-xl: 0 16px 40px hsla(220, 20%, 10%, 0.12);
+  /* Shadows — warm-tinted */
+  --shadow-sm: 0 1px 2px hsla(22, 15%, 10%, 0.06);
+  --shadow-md: 0 4px 12px hsla(22, 15%, 10%, 0.08);
+  --shadow-lg: 0 8px 24px hsla(22, 15%, 10%, 0.1);
+  --shadow-xl: 0 16px 40px hsla(22, 15%, 10%, 0.12);
 
   /* Transitions */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -177,7 +183,7 @@ ol {
 
 /* Focus visible */
 :focus-visible {
-  outline: 2px solid var(--cyan);
+  outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
 
@@ -215,7 +221,7 @@ ol {
 }
 
 .section--navy {
-  background-color: var(--navy);
+  background-color: hsl(20, 30%, 12%);
   color: var(--text-on-dark);
 }
 
@@ -340,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- Selection ---------- */
 ::selection {
-  background-color: var(--cyan);
+  background-color: var(--blue);
   color: var(--white);
 }
 

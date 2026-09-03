@@ -166,7 +166,7 @@
 .select:focus,
 .textarea:focus {
   outline: none;
-  border-color: var(--cyan);
+  border-color: var(--blue);
   background-color: var(--white);
 }
 

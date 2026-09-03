@@ -18,9 +18,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cyan-light);
+  color: var(--peach);
   opacity: 1;
-  filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.35));
+  filter: drop-shadow(0 0 16px hsla(22, 80%, 85%, 0.5));
 }
 
 .globeIcon {
@@ -49,7 +49,7 @@
 
 .body {
   font-size: var(--text-base);
-  color: hsl(215, 25%, 90%);
+  color: hsl(25, 25%, 88%);
   line-height: 1.6;
 }
 

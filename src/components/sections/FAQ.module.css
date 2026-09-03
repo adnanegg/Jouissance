@@ -25,7 +25,7 @@
 }
 
 .item[open] {
-  border-color: var(--cyan);
+  border-color: var(--blue);
   background-color: var(--white);
   box-shadow: var(--shadow-sm);
 }
@@ -62,7 +62,7 @@
 
 .item[open] .icon {
   transform: rotate(180deg);
-  color: var(--cyan);
+  color: var(--blue);
 }
 
 .answer {

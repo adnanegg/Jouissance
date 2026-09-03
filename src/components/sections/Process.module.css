@@ -47,7 +47,7 @@
   width: 52px;
   height: 52px;
   border-radius: var(--radius-full);
-  background-color: var(--navy);
+  background-color: hsl(20, 30%, 14%);
   color: var(--white);
   font-size: var(--text-lg);
   font-weight: 700;
