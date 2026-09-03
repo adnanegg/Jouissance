@@ -62,7 +62,7 @@
 }
 
 .pathCardPhone {
-  background-color: var(--white);
+  background-color: var(--brown-lighter);
   border: 1px solid var(--border);
   color: var(--navy);
 }
@@ -107,7 +107,7 @@
 }
 
 .formContainer {
-  background-color: var(--white);
+  background-color: var(--brown-lighter);
   border: 1px solid var(--border);
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
@@ -157,7 +157,7 @@
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  background-color: var(--surface);
+  background-color: var(--brown-lighter);
   font-size: var(--text-base);
   transition: border-color var(--duration-fast), background-color var(--duration-fast);
 }
@@ -167,7 +167,7 @@
 .textarea:focus {
   outline: none;
   border-color: var(--blue);
-  background-color: var(--white);
+  background-color: var(--brown-light);
 }
 
 .textarea {

@@ -6,7 +6,7 @@
   height: var(--header-height);
   display: flex;
   align-items: center;
-  background-color: hsla(30, 30%, 99%, 0.88);
+  background-color: hsla(25, 28%, 78%, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: box-shadow var(--duration-base) var(--ease-out);
@@ -196,7 +196,7 @@
   inset-inline-end: 0;
   width: min(320px, 85vw);
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--neutral-50);
   box-shadow: var(--shadow-xl);
   animation: slideIn var(--duration-base) var(--ease-out);
   overflow-y: auto;

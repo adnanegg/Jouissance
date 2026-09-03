@@ -37,7 +37,7 @@ export default function FinalCTA({ locale, content }: Props) {
           <a
             href={phoneUrl}
             className="btn btn--secondary btn--lg"
-            style={{ backgroundColor: "var(--white)" }}
+            style={{ backgroundColor: "var(--neutral-50)" }}
             onClick={() => trackPhoneClick("final_cta")}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

@@ -20,6 +20,10 @@
   --peach-light: hsl(24, 70%, 94%);
   --peach-dark: hsl(22, 65%, 75%);
 
+  /* Brown — for cards, header, forms on peach */
+  --brown-light: hsl(25, 28%, 78%);
+  --brown-lighter: hsl(25, 25%, 83%);
+
   /* Neutrals — warm-shifted to harmonize with peach */
   --white: hsl(30, 30%, 99%);
   --neutral-50: hsl(28, 20%, 96%);
@@ -137,7 +141,7 @@ body {
   font-size: var(--text-base);
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--white);
+  background-color: var(--surface);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -297,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn--secondary {
-  background-color: var(--white);
+  background-color: var(--neutral-50);
   color: var(--navy);
   border: 1.5px solid var(--border);
   box-shadow: var(--shadow-sm);

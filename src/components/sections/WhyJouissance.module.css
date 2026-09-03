@@ -22,7 +22,7 @@
 }
 
 .item {
-  background-color: var(--white);
+  background-color: var(--brown-lighter);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   padding: var(--space-6);
