@@ -79,6 +79,7 @@ export function generateStructuredData(locale: Locale): object[] {
     name: business.fullName,
     url: siteConfig.baseUrl,
     logo: `${siteConfig.baseUrl}/brand/logo.svg`,
+    sameAs: [business.social.facebook, business.social.instagram].filter(Boolean),
     contactPoint: {
       "@type": "ContactPoint",
       telephone: business.contact.phone,
@@ -93,6 +94,7 @@ export function generateStructuredData(locale: Locale): object[] {
     name: business.fullName,
     url,
     telephone: business.contact.phone,
+    sameAs: [business.social.facebook, business.social.instagram].filter(Boolean),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Salé",

@@ -35,6 +35,10 @@ export function trackPhoneClick(location: string): void {
   trackEvent("phone_click", { location });
 }
 
+export function trackSocialClick(network: string): void {
+  trackEvent("social_click", { network });
+}
+
 export function trackFormStart(): void {
   trackEvent("quote_form_start");
 }

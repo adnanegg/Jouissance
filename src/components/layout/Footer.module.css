@@ -70,6 +70,44 @@
   gap: var(--space-2);
 }
 
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  background-color: hsla(25, 40%, 85%, 0.08);
+  border: 1px solid hsla(25, 40%, 85%, 0.16);
+  color: var(--peach);
+  text-decoration: none;
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.socialBtn:hover {
+  background-color: var(--peach);
+  border-color: var(--peach);
+  color: hsl(20, 35%, 10%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px hsla(22, 90%, 55%, 0.28);
+}
+
+.socialBtn:active {
+  transform: scale(0.94);
+}
+
 .col {
   display: flex;
   flex-direction: column;

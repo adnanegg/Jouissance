@@ -26,8 +26,8 @@ export const business = {
     address: "N°02 Avenue Med V, Hay Nahda, Sect. 05, Karia – Salé",
   },
   social: {
-    instagram: "",
-    facebook: "",
+    instagram: "https://www.instagram.com/jouissancetravaux/",
+    facebook: "https://www.facebook.com/people/Jouissance-travaux/61593571917230/",
     googleBusiness: "",
   },
 } as const;

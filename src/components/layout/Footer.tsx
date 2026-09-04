@@ -7,7 +7,7 @@ import type { Locale } from "@/config/site";
 import { getAlternateLocale } from "@/config/site";
 import { business } from "@/config/business";
 import type { SiteContent } from "@/lib/i18n";
-import { trackMapsClick } from "@/lib/analytics";
+import { trackMapsClick, trackSocialClick } from "@/lib/analytics";
 import styles from "./Footer.module.css";
 
 type Props = {
@@ -107,6 +107,60 @@ export default function Footer({ locale, content }: Props) {
           </Link>
           <p className={styles.tagline}>{content.footer.tagline}</p>
           <p className={styles.coverage}>{content.footer.coverageStatement}</p>
+          <div className={styles.socialLinks} aria-label="Réseaux sociaux">
+            {business.social.facebook && (
+              <a
+                href={business.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialBtn}
+                aria-label="Facebook"
+                title="Facebook"
+                onClick={() => trackSocialClick("facebook")}
+              >
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            )}
+            {business.social.instagram && (
+              <a
+                href={business.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialBtn}
+                aria-label="Instagram"
+                title="Instagram"
+                onClick={() => trackSocialClick("instagram")}
+              >
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+            )}
+          </div>
         </div>
 
         {/* Links Column */}
