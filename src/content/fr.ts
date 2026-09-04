@@ -315,6 +315,8 @@ export const contentFr: SiteContent = {
     contactTitle: "Contact",
     linksTitle: "Navigation",
     coverageStatement: "Intervention partout au Maroc",
+    address: "N°02 Avenue Med V, Hay Nahda, Sect. 05, Karia – Salé",
+    mapsLabel: "Google Maps ↗",
     privacy: "Politique de confidentialité",
     rights: "Tous droits réservés.",
   },

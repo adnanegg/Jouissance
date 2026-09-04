@@ -213,7 +213,7 @@ export default function Footer({ locale, content }: Props) {
               </li>
             )}
 
-            {Boolean(business.contact.address) && (
+            {(content.footer.address || business.contact.address) && (
               <li className={styles.addressItem}>
                 <span className={styles.icon}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -221,7 +221,7 @@ export default function Footer({ locale, content }: Props) {
                     <circle cx="12" cy="10" r="3" />
                   </svg>
                 </span>
-                <span>{business.contact.address}</span>
+                <span>{content.footer.address || business.contact.address}</span>
               </li>
             )}
 
@@ -239,7 +239,7 @@ export default function Footer({ locale, content }: Props) {
                       <polygon points="3 11 22 2 13 21 11 13 3 11" />
                     </svg>
                   </span>
-                  <span>Google Maps ↗</span>
+                  <span>{content.footer.mapsLabel}</span>
                 </a>
               </li>
             )}

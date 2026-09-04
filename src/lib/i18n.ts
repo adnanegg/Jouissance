@@ -165,6 +165,8 @@ export interface SiteContent {
     contactTitle: string;
     linksTitle: string;
     coverageStatement: string;
+    address: string;
+    mapsLabel: string;
     privacy: string;
     rights: string;
   };

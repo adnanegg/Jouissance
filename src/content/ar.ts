@@ -315,6 +315,8 @@ export const contentAr: SiteContent = {
     contactTitle: "اتصل بنا",
     linksTitle: "التنقل",
     coverageStatement: "نتنقلو لجميع أنحاء المغرب",
+    address: "رقم 02 شارع محمد الخامس، حي النهضة، قطاع 05، القرية – سلا",
+    mapsLabel: "خرائط جوجل ↗",
     privacy: "سياسة الخصوصية",
     rights: "جميع الحقوق محفوظة.",
   },
