@@ -1,9 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Locale } from "@/config/site";
 import { getAlternateLocale } from "@/config/site";
 import { business } from "@/config/business";
 import type { SiteContent } from "@/lib/i18n";
+import { trackMapsClick } from "@/lib/analytics";
 import styles from "./Footer.module.css";
 
 type Props = {
@@ -12,8 +16,23 @@ type Props = {
 };
 
 export default function Footer({ locale, content }: Props) {
+  const router = useRouter();
   const altLocale = getAlternateLocale(locale);
   const year = new Date().getFullYear();
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`/${locale}${href}`);
+    }
+  };
 
   const getLinkIcon = (key: string) => {
     switch (key) {
@@ -97,7 +116,11 @@ export default function Footer({ locale, content }: Props) {
             <ul className={styles.linkList}>
               {navLinks.map((link) => (
                 <li key={link.key}>
-                  <a href={link.href} className={styles.link}>
+                  <a
+                    href={link.href}
+                    className={styles.link}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                  >
                     <span className={styles.icon}>{getLinkIcon(link.key)}</span>
                     <span>{content.nav[link.key]}</span>
                   </a>
@@ -155,6 +178,7 @@ export default function Footer({ locale, content }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.link}
+                  onClick={() => trackMapsClick("footer")}
                 >
                   <span className={styles.icon}>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

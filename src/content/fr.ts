@@ -59,9 +59,9 @@ export const contentFr: SiteContent = {
     items: [
       {
         number: "01",
-        title: "Construction & Gros œuvre",
+        title: "Aluminium & Menuiserie",
         description:
-          "Travaux de construction et de rénovation structurelle. Du gros œuvre aux fondations, nous posons les bases solides de votre projet.",
+          "Fenêtres, portes, vérandas et aménagements en aluminium. Menuiserie sur mesure adaptée à vos besoins.",
       },
       {
         number: "02",
@@ -77,9 +77,9 @@ export const contentFr: SiteContent = {
       },
       {
         number: "04",
-        title: "Aluminium & Menuiserie",
+        title: "Sols, plafonds & finition",
         description:
-          "Fenêtres, portes, vérandas et aménagements en aluminium. Menuiserie sur mesure adaptée à vos besoins.",
+          "Revêtements de sols, plafonds et travaux de finition. La touche finale qui fait la différence dans chaque projet.",
       },
       {
         number: "05",
@@ -89,9 +89,9 @@ export const contentFr: SiteContent = {
       },
       {
         number: "06",
-        title: "Sols, plafonds & finition",
+        title: "Construction & Gros œuvre",
         description:
-          "Revêtements de sols, plafonds et travaux de finition. La touche finale qui fait la différence dans chaque projet.",
+          "Travaux de construction et de rénovation structurelle. Du gros œuvre aux fondations, nous posons les bases solides de votre projet.",
       },
     ],
     cta: "Parlez-nous de votre projet",
@@ -283,12 +283,12 @@ export const contentFr: SiteContent = {
     fieldDescriptionPlaceholder:
       "Décrivez brièvement votre projet et vos attentes...",
     categories: [
-      "Construction & Gros œuvre",
+      "Aluminium & Menuiserie",
       "Peinture & Décoration",
       "Plâtre & Faux plafonds",
-      "Aluminium & Menuiserie",
-      "Électricité & Plomberie",
       "Sols, plafonds & finition",
+      "Électricité & Plomberie",
+      "Construction & Gros œuvre",
       "Autre",
     ],
     submit: "Envoyer ma demande",

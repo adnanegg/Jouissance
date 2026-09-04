@@ -9,12 +9,12 @@ type Props = {
 };
 
 const serviceImages = [
-  { src: "/services/construction.png", alt: "Construction & Gros œuvre" },
+  { src: "/services/aluminium.png", alt: "Aluminium & Menuiserie" },
   { src: "/services/peinture.png", alt: "Peinture & Décoration" },
   { src: "/services/platre.png", alt: "Plâtre & Faux plafonds" },
-  { src: "/services/aluminium.png", alt: "Aluminium & Menuiserie" },
-  { src: "/services/electricite.png", alt: "Électricité & Plomberie" },
   { src: "/services/finition.png", alt: "Sols, plafonds & finition" },
+  { src: "/services/electricite.png", alt: "Électricité & Plomberie" },
+  { src: "/services/construction.png", alt: "Construction & Gros œuvre" },
 ];
 
 export default function Services({ content }: Props) {

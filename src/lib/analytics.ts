@@ -27,6 +27,10 @@ export function trackWhatsAppClick(location: string): void {
   trackEvent("whatsapp_click", { location });
 }
 
+export function trackMapsClick(location: string): void {
+  trackEvent("maps_click", { location });
+}
+
 export function trackPhoneClick(location: string): void {
   trackEvent("phone_click", { location });
 }
